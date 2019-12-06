@@ -6,7 +6,7 @@
   "description": "ปลั๊กอิน CMMC Remote สำหรับรับส่งข้อมูลผ่าน WiFi จาก CMMC Remote Application",
   "homepage": "",
   "license": "MIT",
-  "git": "https://github.com/cmmc-kbide/",
+  "git": "https://github.com/cmmc-kbide/kbide-plugin-cmmcReceive/",
   "author": "cmmc",
   "email": "",
   "url": "https://www.kbide.org/",
