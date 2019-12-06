@@ -1,0 +1,17 @@
+{
+  "name" : "kbide-plugin-cmmcRemote",
+  "title": "CMMC Remote",
+  "category" : "Device Control",
+  "keywords": "motor, esp32, arduino",
+  "description": "ปลั๊กอิน CMMC Remote สำหรับรับส่งข้อมูลผ่าน WiFi จาก CMMC Remote Application",
+  "homepage": "",
+  "license": "MIT",
+  "git": "https://github.com/cmmc-kbide/",
+  "author": "cmmc",
+  "email": "",
+  "url": "https://www.kbide.org/",
+  "version": "1.0.0",
+  "board" : "",
+  "platform": ["arduino-esp32"],
+  "image" : "/static/CMMCRemote.PNG"
+}
