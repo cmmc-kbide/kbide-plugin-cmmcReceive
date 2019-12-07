@@ -38,7 +38,7 @@ public:
 	~cmmcReceive();
 
 	// method
-	void begin();
+	void begin(String _name);
 	void loop();
 	int8_t getRoll();
 	int8_t getPitch();

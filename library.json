@@ -10,7 +10,7 @@
   "author": "cmmc",
   "email": "",
   "url": "https://www.kbide.org/",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "board" : "",
   "platform": ["arduino-esp32"],
   "image" : "/static/CMMCRemote.PNG"

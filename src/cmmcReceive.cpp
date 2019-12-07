@@ -196,7 +196,7 @@ void cmmcReceive::blink()
 	digitalWrite(LED, led);
 }
 
-void cmmcReceive::begin()
+void cmmcReceive::begin(String _name)
 {
 	delay(3000);
 	Serial.begin(115200);
@@ -214,10 +214,11 @@ void cmmcReceive::begin()
 	sprintf(defaultESPWiFiName, "ESP_%#02X%#02X%#02X", mac[3], mac[4], mac[5]);
 	defaultESPWiFiName[DEFAULT_SSID_LENGTH - 1] = '\0';
 
-	sprintf(accessPointName, "KBCar%lu", ESP.getEfuseMac());
+	// sprintf(accessPointName, "KBCar%lu", ESP.getEfuseMac());
+	sprintf(accessPointName, "KBCar-%s", _name.c_str());
 	accessPointName[DEFAULT_SSID_LENGTH - 1] = '\0';
 
-	sprintf(accessPointPassword, "%lu", ESP.getEfuseMac());
+	sprintf(accessPointPassword, "%lu", _name.c_str());
 	accessPointPassword[DEFAULT_SSID_LENGTH - 1] = '\0';
 
 	WiFi.softAP(accessPointName, accessPointPassword);

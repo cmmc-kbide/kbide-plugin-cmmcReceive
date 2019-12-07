@@ -1,9 +1,10 @@
 Blockly.JavaScript['cmmcRemote_setup'] = function (block) {
+	var value_name = Blockly.JavaScript.valueToCode(block, 'NAME', Blockly.JavaScript.ORDER_ATOMIC);
 
 	var code = `
 #EXTINC#include <cmmcReceive.h>#END
 #VARIABLEcmmcReceive remote;#END
-remote.begin();
+remote.begin(${value_name});
 \n`;
 
 	return code;
