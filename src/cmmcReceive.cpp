@@ -196,7 +196,7 @@ void cmmcReceive::blink()
 	digitalWrite(LED, led);
 }
 
-void cmmcReceive::begin(String _name)
+void cmmcReceive::begin(String _name, String _password)
 {
 	delay(3000);
 	Serial.begin(115200);
@@ -218,7 +218,7 @@ void cmmcReceive::begin(String _name)
 	sprintf(accessPointName, "KBCar-%s", _name.c_str());
 	accessPointName[DEFAULT_SSID_LENGTH - 1] = '\0';
 
-	sprintf(accessPointPassword, "%lu", _name.c_str());
+	sprintf(accessPointPassword, "%s", _password.c_str());
 	accessPointPassword[DEFAULT_SSID_LENGTH - 1] = '\0';
 
 	WiFi.softAP(accessPointName, accessPointPassword);

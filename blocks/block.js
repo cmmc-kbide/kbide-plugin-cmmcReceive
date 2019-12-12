@@ -4,6 +4,10 @@ Blockly.Blocks['cmmcRemote_setup'] = {
 			.appendField("cmmcRemote : Setup board name");
 		this.appendValueInput("NAME")
 			.setCheck("String");
+		this.appendDummyInput()
+			.appendField("password");
+		this.appendValueInput("PSK")
+			.setCheck("String");
 		this.setInputsInline(true);
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
